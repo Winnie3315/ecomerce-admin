@@ -1,7 +1,5 @@
 "use client"
 
-import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
-import Modal from "@/components/ui/modal"
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
 

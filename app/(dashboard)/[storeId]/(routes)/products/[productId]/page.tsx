@@ -1,6 +1,5 @@
 import prismadb from "@/lib/prismadb";
 import ProductsForm from "./components/ProductsForm";
-import { Decimal } from "@prisma/client/runtime/library";
 
 const ProductPage = async ({
     params

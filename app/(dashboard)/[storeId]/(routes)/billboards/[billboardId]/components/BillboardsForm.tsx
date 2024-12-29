@@ -58,7 +58,7 @@ const BillboardsForm: React.FC<BillboardsFormProps> = ({ initialData }) => {
             router.refresh()
             router.push(`/${params.storeId}/billboards`)
             toast.success(toastMessage)
-        } catch (error) {
+        } catch {
             toast.error("Something went wrong.")
         } finally {
             setLoading(false)
@@ -72,7 +72,7 @@ const BillboardsForm: React.FC<BillboardsFormProps> = ({ initialData }) => {
             router.refresh()
             toast.success("Billboard deleted")
             router.push(`/${params.storeId}/billboards`)
-        } catch (error) {
+        } catch  {
             toast.error("Make sure you removed all categories first.")
         } finally {
             setLoading(false)

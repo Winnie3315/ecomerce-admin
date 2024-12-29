@@ -1,6 +1,5 @@
 import Navbar from "@/components/navbar";
 import prismadb from "@/lib/prismadb";
-import { ThemeProvider } from "@/providers/theme-provider";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 

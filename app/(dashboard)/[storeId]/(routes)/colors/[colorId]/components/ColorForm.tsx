@@ -59,7 +59,7 @@ const ColorsForm: React.FC<ColorsFormProps> = ({ initialData }) => {
             router.refresh()
             router.push(`/${params.storeId}/colors`)
             toast.success(toastMessage)
-        } catch (error) {
+        } catch {
             toast.error("Something went wrong.")
         } finally {
             setLoading(false)
@@ -73,7 +73,7 @@ const ColorsForm: React.FC<ColorsFormProps> = ({ initialData }) => {
             router.refresh()
             toast.success("Color deleted")
             router.push(`/${params.storeId}/colors`)
-        } catch (error) {
+        } catch {
             toast.error("Make sure you removed all product first.")
         } finally {
             setLoading(false)

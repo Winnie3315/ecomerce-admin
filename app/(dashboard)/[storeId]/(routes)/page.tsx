@@ -68,7 +68,7 @@ const DashboardPage = async ({params}: {params: {storeId: string}}) => {
                         <CardTitle>Overview</CardTitle>
                      </CardHeader>
                      <CardContent className="pl-2">
-                        <Overview data={[]}/>
+                        <Overview data={graphRevenue}/>
                      </CardContent>
                 </Card>
             </div>
